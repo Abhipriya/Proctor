@@ -3,12 +3,16 @@ import mediapipe as mp
 import numpy as np
 import time
 import threading
+import math
+import os
 from datetime import datetime
 from collections import deque
 import speech_recognition as sr
 import langdetect
+from ultralytics import YOLO
 
-# Initialize MediaPipe components
+# ====================== Initialization ======================
+# MediaPipe
 mp_face_mesh = mp.solutions.face_mesh
 mp_face_detection = mp.solutions.face_detection
 mp_drawing = mp.solutions.drawing_utils
@@ -19,20 +23,42 @@ face_detection = mp_face_detection.FaceDetection(model_selection=0, min_detectio
 drawing_spec = mp_drawing.DrawingSpec(thickness=1, circle_radius=1)
 log_file = "proctoring_log.txt"
 
-# Moving average buffer for head angles
+# Buffer for head angles
 angle_buffer_size = 5
 x_angles = deque(maxlen=angle_buffer_size)
 y_angles = deque(maxlen=angle_buffer_size)
 
-# Initialize Speech Recognition
+# Speech Recognition
 recognizer = sr.Recognizer()
 mic = sr.Microphone()
 
+# YOLO Model
+model = YOLO("yolo-Weights/yolov8n.pt")
+classNames = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck", "boat",
+              "traffic light", "fire hydrant", "stop sign", "parking meter", "bench", "bird", "cat",
+              "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe", "backpack", "umbrella",
+              "handbag", "tie", "suitcase", "frisbee", "skis", "snowboard", "sports ball", "kite", "baseball bat",
+              "baseball glove", "skateboard", "surfboard", "tennis racket", "bottle", "wine glass", "cup",
+              "fork", "knife", "spoon", "bowl", "banana", "apple", "sandwich", "orange", "broccoli",
+              "carrot", "hot dog", "pizza", "donut", "cake", "chair", "sofa", "pottedplant", "bed",
+              "diningtable", "toilet", "tvmonitor", "laptop", "mouse", "remote", "keyboard", "cell phone",
+              "microwave", "oven", "toaster", "sink", "refrigerator", "book", "clock", "vase", "scissors",
+              "teddy bear", "hair drier", "toothbrush"]
+phone_class_id = classNames.index("cell phone")
+
+# Alert settings
+if not os.path.exists("alerts"):
+    os.makedirs("alerts")
+last_alert_time = 0
+alert_cooldown = 5  # seconds
+
+# ====================== Functions ======================
 def log_event(message):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    with open(log_file, "a") as log:
+    with open(log_file, "a", encoding="utf-8") as log:  # <-- UTF-8 encoding added here
         log.write(f"[{timestamp}] {message}\n")
     print(f"{timestamp} - {message}")
+
 
 def detect_speech():
     while True:
@@ -53,10 +79,11 @@ def detect_speech():
             except sr.WaitTimeoutError:
                 pass
 
-# Run speech detection in a separate thread
+# Start speech detection thread
 speech_thread = threading.Thread(target=detect_speech, daemon=True)
 speech_thread.start()
 
+# ====================== Main Execution ======================
 cap = cv2.VideoCapture(0)
 if not cap.isOpened():
     print("Error: Could not open webcam.")
@@ -82,6 +109,7 @@ while cap.isOpened():
     image.flags.writeable = True
     image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
 
+    # ================== Face Count Detection ==================
     face_count = 0
     if results_detection.detections:
         face_count = len(results_detection.detections)
@@ -100,6 +128,7 @@ while cap.isOpened():
     elif face_count > 0:
         face_not_detected = False
 
+    # ================== Head Pose Estimation ==================
     if results_mesh.multi_face_landmarks:
         for face_landmarks in results_mesh.multi_face_landmarks:
             face_3d, face_2d = [], []
@@ -120,7 +149,6 @@ while cap.isOpened():
             angles, _, _, _, _, _ = cv2.RQDecomp3x3(rmat)
             x, y, z = angles[0] * 360, angles[1] * 360, angles[2] * 360
 
-            # Stabilizing angles using moving average
             x_angles.append(x)
             y_angles.append(y)
             avg_x = np.mean(x_angles)
@@ -144,6 +172,33 @@ while cap.isOpened():
                 cv2.putText(image, "WARNING: Excessive movement detected!", (20, 100),
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
 
+    # ================== Phone Detection (YOLO) ==================
+    results = model(image, stream=True)
+    phone_detected = False
+
+    for r in results:
+        boxes = r.boxes
+        for box in boxes:
+            cls = int(box.cls[0])
+            if cls != phone_class_id:
+                continue
+            phone_detected = True
+            x1, y1, x2, y2 = map(int, box.xyxy[0])
+            confidence = math.ceil((box.conf[0] * 100)) / 100
+            cv2.rectangle(image, (x1, y1), (x2, y2), (0, 0, 255), 2)
+            cv2.putText(image, "cell phone", (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 255), 2)
+
+    current_time = time.time()
+    if phone_detected:
+        cv2.putText(image, "⚠️ WARNING: MOBILE PHONE DETECTED!", (30, 60),
+                    cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), 3)
+        if current_time - last_alert_time > alert_cooldown:
+            log_event("⚠️ ALERT: Mobile phone detected!")
+            timestamp = time.strftime("%Y%m%d-%H%M%S")
+            cv2.imwrite(f"alerts/phone_{timestamp}.jpg", image)
+            last_alert_time = current_time
+
+    # ================== Display ==================
     end = time.time()
     fps = 1 / (end - start)
     cv2.putText(image, f'FPS: {int(fps)}', (20, 450), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 255, 0), 2)
