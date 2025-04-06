@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="16369478-8944-4336-8d11-6a961c69f347" name="Changes" comment="Update phone detection script with improved phone alert logic">
+      <change beforePath="$PROJECT_DIR$/Phone detection .py" beforeDir="false" afterPath="$PROJECT_DIR$/Phone detection .py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yolov5/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/yolov5/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Abhipriya&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Abhipriya/AI-proctor.git&quot;,
+    &quot;accountId&quot;: &quot;4cb9bd78-8c56-473a-b61e-553e67e11c3f&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2rXJ5KX5SAGdP7B0K9gafJgFEr5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.360 scan.executor": "Run",
+    "Python.Another person.executor": "Run",
+    "Python.Combine .executor": "Run",
+    "Python.Face detection.executor": "Run",
+    "Python.Fcae recognition .executor": "Run",
+    "Python.Fcae recognition 2.executor": "Run",
+    "Python.Head Movement.executor": "Run",
+    "Python.Object detection.executor": "Run",
+    "Python.Phone detection .executor": "Run",
+    "Python.Project 1.executor": "Run",
+    "Python.Project.executor": "Run",
+    "Python.Restricting actions.executor": "Run",
+    "Python.Test.executor": "Run",
+    "Python.any.executor": "Run",
+    "Python.eye tarcking.executor": "Run",
+    "Python.face dtection.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.project.executor": "Run",
+    "Python.sound.executor": "Run",
+    "Python.switching tabs.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/LENOVO/PycharmProjects/PythonProject/yolov5",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\PycharmProjects\PythonProject\yolov5" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16369478-8944-4336-8d11-6a961c69f347" name="Changes" comment="" />
+      <created>1736699303704</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736699303704</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Update phone detection script with improved phone alert logic">
+      <option name="closed" value="true" />
+      <created>1743920470355</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743920470355</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update phone detection script with improved phone alert logic">
+      <option name="closed" value="true" />
+      <created>1743920694771</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743920694771</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update phone detection script with improved phone alert logic">
+      <option name="closed" value="true" />
+      <created>1743920983128</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743920983128</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update phone detection script with improved phone alert logic">
+      <option name="closed" value="true" />
+      <created>1743921042637</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743921042637</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update phone detection script with improved phone alert logic">
+      <option name="closed" value="true" />
+      <created>1743921112187</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743921112187</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update phone detection script with improved phone alert logic">
+      <option name="closed" value="true" />
+      <created>1743921162279</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743921162279</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update phone detection script with improved phone alert logic">
+      <option name="closed" value="true" />
+      <created>1743921208190</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1743921208190</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Update phone detection script with improved phone alert logic">
+      <option name="closed" value="true" />
+      <created>1743921272233</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1743921272233</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Update phone detection script with improved phone alert logic">
+      <option name="closed" value="true" />
+      <created>1743921581166</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1743921581166</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update phone detection script with improved phone alert logic">
+      <option name="closed" value="true" />
+      <created>1743921790590</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1743921790590</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Update phone detection script with improved phone alert logic">
+      <option name="closed" value="true" />
+      <created>1743922530909</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1743922530909</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Update phone detection script with improved phone alert logic">
+      <option name="closed" value="true" />
+      <created>1743923369546</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1743923369546</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Update phone detection script with improved phone alert logic">
+      <option name="closed" value="true" />
+      <created>1743924495740</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1743924495740</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update phone detection script with improved phone alert logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update phone detection script with improved phone alert logic" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Fcae recognition .py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
