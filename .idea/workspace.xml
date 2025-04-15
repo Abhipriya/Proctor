@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16369478-8944-4336-8d11-6a961c69f347" name="Changes" comment="Update phone detection script with improved phone alert logic">
-      <change beforePath="$PROJECT_DIR$/Phone detection .py" beforeDir="false" afterPath="$PROJECT_DIR$/Phone detection .py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yolov5" beforeDir="false" afterPath="$PROJECT_DIR$/yolov5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yolov5/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/yolov5/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,35 +45,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.360 scan.executor": "Run",
-    "Python.Another person.executor": "Run",
-    "Python.Combine .executor": "Run",
-    "Python.Face detection.executor": "Run",
-    "Python.Fcae recognition .executor": "Run",
-    "Python.Fcae recognition 2.executor": "Run",
-    "Python.Head Movement.executor": "Run",
-    "Python.Object detection.executor": "Run",
-    "Python.Phone detection .executor": "Run",
-    "Python.Project 1.executor": "Run",
-    "Python.Project.executor": "Run",
-    "Python.Restricting actions.executor": "Run",
-    "Python.Test.executor": "Run",
-    "Python.any.executor": "Run",
-    "Python.eye tarcking.executor": "Run",
-    "Python.face dtection.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.project.executor": "Run",
-    "Python.sound.executor": "Run",
-    "Python.switching tabs.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/LENOVO/PycharmProjects/PythonProject/yolov5",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.360 scan.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Another person.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Combine .executor&quot;: &quot;Run&quot;,
+    &quot;Python.Face detection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Fcae recognition .executor&quot;: &quot;Run&quot;,
+    &quot;Python.Fcae recognition 2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Head Movement.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Object detection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Phone detection .executor&quot;: &quot;Run&quot;,
+    &quot;Python.Project 1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Project.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Restricting actions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.any.executor&quot;: &quot;Run&quot;,
+    &quot;Python.eye tarcking.executor&quot;: &quot;Run&quot;,
+    &quot;Python.face dtection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.project.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sound.executor&quot;: &quot;Run&quot;,
+    &quot;Python.switching tabs.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/LENOVO/PycharmProjects/PythonProject/yolov5&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\LENOVO\PycharmProjects\PythonProject\yolov5" />
@@ -198,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743924495740</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Update phone detection script with improved phone alert logic">
+      <option name="closed" value="true" />
+      <created>1743926885723</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1743926885723</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
