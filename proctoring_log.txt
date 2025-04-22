@@ -112,3 +112,228 @@
 [2025-04-06 13:36:28] Speech detected: Mona abhi Priya (Language: tl)
 [2025-04-06 13:36:28] WARNING: Non-English speech detected!
 [2025-04-06 13:36:33] Proctoring session ended by user.
+[2025-04-22 12:29:54] No face detected! Test access restricted.
+[2025-04-22 12:30:09] ⚠️ ALERT: Mobile phone detected!
+[2025-04-22 12:30:11] No face detected! Test access restricted.
+[2025-04-22 12:30:11] No face detected! Test access restricted.
+[2025-04-22 12:30:17] No face detected! Test access restricted.
+[2025-04-22 12:30:28] Proctoring session ended by user.
+[2025-04-22 12:36:45] No face detected! Test access restricted.
+[2025-04-22 12:36:45] Speech detected: Jaane Mere Dil Ko Kya Ho Gaya Abhi To Yahi (Language: so)
+[2025-04-22 12:36:45] WARNING: Non-English speech detected!
+[2025-04-22 12:36:50] Speech detected: Pyar Sajna (Language: id)
+[2025-04-22 12:36:50] WARNING: Non-English speech detected!
+[2025-04-22 12:36:54] ⚠️ ALERT: Mobile phone detected!
+[2025-04-22 12:36:56] No face detected! Test access restricted.
+[2025-04-22 12:37:13] Proctoring session ended by user.
+[2025-04-22 12:41:20] ⚠️ ALERT: No face detected! Test access restricted.
+[2025-04-22 12:41:26] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:26] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:26] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:26] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:26] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:27] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:27] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:27] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:27] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:29] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:29] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:30] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:30] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:30] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:32] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:32] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:32] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:32] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:33] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:33] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:34] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:34] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:36] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:37] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:37] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:37] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:37] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:38] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:38] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:41:41] ⚠️ ALERT: Mobile phone detected!
+[2025-04-22 12:41:55] ⚠️ ALERT: No face detected! Test access restricted.
+[2025-04-22 12:41:58] Proctoring session ended by user.
+[2025-04-22 12:47:37] ⚠️ ALERT: No face detected! Test access restricted.
+[2025-04-22 12:47:44] ⚠️ ALERT: No face detected! Test access restricted.
+[2025-04-22 12:47:49] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:47:49] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:47:50] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:47:50] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:47:53] Proctoring session ended by user.
+[2025-04-22 12:53:17] ⚠️ WARNING: Could not understand speech.
+[2025-04-22 12:53:25] Speech detected: kya yaar (Language: so)
+[2025-04-22 12:53:25] ⚠️ WARNING: Non-English speech detected!
+[2025-04-22 12:53:26] ⚠️ ALERT: No face detected! Test access restricted.
+[2025-04-22 12:53:42] ⚠️ ALERT: No face landmarks detected! Test access restricted.
+[2025-04-22 12:53:42] ⚠️ ALERT: No face landmarks detected! Test access restricted.
+[2025-04-22 12:53:44] ⚠️ ALERT: No face landmarks detected! Test access restricted.
+[2025-04-22 12:53:44] ⚠️ ALERT: No face landmarks detected! Test access restricted.
+[2025-04-22 12:53:46] Proctoring session ended by user.
+[2025-04-22 12:54:27] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:28] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:28] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:30] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:30] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:30] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:30] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:31] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:32] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:32] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:33] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:33] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:33] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:33] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:34] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:40] ⚠️ ALERT: Multiple faces detected! Test access restricted.
+[2025-04-22 12:54:44] ⚠️ ALERT: Multiple faces detected! Test access restricted.
+[2025-04-22 12:54:49] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:50] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:50] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:50] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:50] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:50] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:51] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:51] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:51] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:51] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:51] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:52] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:54:52] Proctoring session ended by user.
+[2025-04-22 12:56:35] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:56:35] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:56:35] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:56:35] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:56:35] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:56:36] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:56:36] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:56:36] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:56:36] ⚠️ ALERT: No face detected! Test access restricted.
+[2025-04-22 12:56:46] ⚠️ ALERT: No face detected! Test access restricted.
+[2025-04-22 12:56:50] Proctoring session ended by user.
+[2025-04-22 12:58:35] ⚠️ ALERT: No face detected! Test access restricted.
+[2025-04-22 12:58:53] Proctoring session ended by user.
+[2025-04-22 12:59:32] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:59:33] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:59:33] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:59:33] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:59:33] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:59:34] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:59:37] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:59:37] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:59:37] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:59:40] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:59:40] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:59:40] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:59:41] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:59:41] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:59:41] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 12:59:42] Proctoring session ended by user.
+[2025-04-22 13:00:09] ⚠️ ALERT: Mobile phone detected!
+[2025-04-22 13:00:11] ⚠️ ALERT: No face detected! Test access restricted.
+[2025-04-22 13:00:13] Proctoring session ended by user.
+[2025-04-22 13:01:03] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:04] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:04] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:07] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:07] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:07] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:08] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:08] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:08] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:10] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:10] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:10] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:10] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:11] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:11] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:11] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:11] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:14] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:15] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:18] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:18] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:19] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:19] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:01:21] ⚠️ ALERT: No face detected! Test access restricted.
+[2025-04-22 13:01:24] Proctoring session ended by user.
+[2025-04-22 13:04:35] ⚠️ ALERT: No face detected! Test access restricted.
+[2025-04-22 13:04:39] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:04:39] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:04:39] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:04:40] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:04:40] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:04:40] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:04:40] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:04:53] Speech detected: kya re (Language: tr)
+[2025-04-22 13:04:53] ⚠️ WARNING: Non-English speech detected!
+[2025-04-22 13:04:57] Speech detected: kya re (Language: tr)
+[2025-04-22 13:04:57] ⚠️ WARNING: Non-English speech detected!
+[2025-04-22 13:05:14] Proctoring session ended by user.
+[2025-04-22 13:18:30] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:18:39] ⚠️ ALERT: Mobile phone detected!
+[2025-04-22 13:18:40] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:18:40] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:18:42] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:18:43] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:18:43] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:18:43] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:18:43] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:18:43] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:18:44] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:18:45] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:18:45] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:18:46] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:18:46] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:18:47] ⚠️ ALERT: No face detected! Test access restricted.
+[2025-04-22 13:19:20] ⚠️ ALERT: Mobile phone detected!
+[2025-04-22 13:19:20] Proctoring session ended by user.
+[2025-04-22 13:21:34] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:21:34] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:21:34] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:21:34] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:21:38] ⚠️ ALERT: Mobile phone detected!
+[2025-04-22 13:21:38] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:21:38] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:21:38] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:21:38] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:21:39] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:21:48] Proctoring session ended by user.
+[2025-04-22 13:23:01] Speech detected: Mujhe Buddha Mil Gaya (Language: so)
+[2025-04-22 13:23:01] ⚠️ WARNING: Non-English speech detected!
+[2025-04-22 13:23:14] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:23:14] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:23:15] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:23:15] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:23:15] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:23:15] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:23:18] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:23:18] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:23:19] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:23:19] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:23:19] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:23:21] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:23:21] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:23:22] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:23:22] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:23:22] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:23:23] ⚠️ ALERT: No face detected! Test access restricted.
+[2025-04-22 13:23:35] Proctoring session ended by user.
+[2025-04-22 13:27:54] Speech detected: Mujhe Pehli Baar Unse (Language: de)
+[2025-04-22 13:27:54] ⚠️ WARNING: Non-English speech detected!
+[2025-04-22 13:28:02] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:28:02] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:28:02] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:28:02] Speech detected: Unse Ho Gai Aankhen (Language: de)
+[2025-04-22 13:28:02] ⚠️ WARNING: Non-English speech detected!
+[2025-04-22 13:28:02] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:28:03] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:28:03] ⚠️ ALERT: Excessive head movement detected!
+[2025-04-22 13:28:04] ⚠️ ALERT: No face detected! Test access restricted.
+[2025-04-22 13:28:07] ⚠️ ALERT: Mobile phone detected!
+[2025-04-22 13:28:09] Proctoring session ended by user.

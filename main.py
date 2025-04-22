@@ -18,7 +18,7 @@ mp_face_detection = mp.solutions.face_detection
 mp_drawing = mp.solutions.drawing_utils
 
 face_mesh = mp_face_mesh.FaceMesh(min_detection_confidence=0.5, min_tracking_confidence=0.5)
-face_detection = mp_face_detection.FaceDetection(model_selection=0, min_detection_confidence=0.5)
+face_detection = mp_face_detection.FaceDetection(model_selection=0, min_detection_confidence=0.6)
 
 drawing_spec = mp_drawing.DrawingSpec(thickness=1, circle_radius=1)
 log_file = "proctoring_log.txt"
@@ -55,23 +55,30 @@ alert_cooldown = 5  # seconds
 # ====================== Functions ======================
 def log_event(message):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    with open(log_file, "a", encoding="utf-8") as log:  # <-- UTF-8 encoding added here
+    with open(log_file, "a", encoding="utf-8") as log:
         log.write(f"[{timestamp}] {message}\n")
     print(f"{timestamp} - {message}")
+
+# Initialize global variables for non-English speech warning
+non_english_warning = False
+non_english_warning_time = 0
 
 
 def detect_speech():
     while True:
         with mic as source:
             recognizer.adjust_for_ambient_noise(source)
-            print("Listening for speech...")
             try:
                 audio = recognizer.listen(source, timeout=3)
                 text = recognizer.recognize_google(audio)
                 detected_lang = langdetect.detect(text)
                 log_event(f"Speech detected: {text} (Language: {detected_lang})")
                 if detected_lang != "en":
-                    log_event("WARNING: Non-English speech detected!")
+                    log_event("⚠️ WARNING: Non-English speech detected!")
+                    global non_english_warning, non_english_warning_time
+                    non_english_warning = True
+                    non_english_warning_time = time.time()
+                    print(f"Non-English Speech Detected: {detected_lang}")  # Debugging output
             except sr.UnknownValueError:
                 pass
             except sr.RequestError:
@@ -92,6 +99,7 @@ if not cap.isOpened():
 multi_person_detected = False
 face_not_detected = False
 
+
 print("Proctoring system started. Press 'q' to exit.")
 
 while cap.isOpened():
@@ -111,21 +119,31 @@ while cap.isOpened():
 
     # ================== Face Count Detection ==================
     face_count = 0
+    face_visible = False
+
     if results_detection.detections:
         face_count = len(results_detection.detections)
+        face_visible = True
         for detection in results_detection.detections:
             mp_drawing.draw_detection(image, detection)
 
-    if face_count > 1 and not multi_person_detected:
-        log_event("Multiple faces detected! Test access restricted.")
-        multi_person_detected = True
-    elif face_count <= 1:
+    if results_mesh.multi_face_landmarks:
+        face_visible = True
+
+    if face_count > 1:
+        if not multi_person_detected:
+            log_event("⚠️ ALERT: Multiple faces detected! Test access restricted.")
+            multi_person_detected = True
+    else:
         multi_person_detected = False
 
-    if face_count == 0 and not face_not_detected:
-        log_event("No face detected! Test access restricted.")
-        face_not_detected = True
-    elif face_count > 0:
+    if not face_visible:
+        if not face_not_detected:
+            log_event("⚠️ ALERT: No face detected! Test access restricted.")
+            face_not_detected = True
+        cv2.putText(image, "⚠️ WARNING: No face detected!", (30, 100),
+                    cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), 3)
+    else:
         face_not_detected = False
 
     # ================== Head Pose Estimation ==================
@@ -154,23 +172,26 @@ while cap.isOpened():
             avg_x = np.mean(x_angles)
             avg_y = np.mean(y_angles)
 
+            # Show head pose direction
             if avg_y < -10:
-                text = "Looking Left"
+                direction = "Looking Left"
             elif avg_y > 10:
-                text = "Looking Right"
+                direction = "Looking Right"
             elif avg_x < -10:
-                text = "Looking Down"
+                direction = "Looking Down"
             elif avg_x > 10:
-                text = "Looking Up"
+                direction = "Looking Up"
             else:
-                text = "Forward"
+                direction = "Forward"
 
-            cv2.putText(image, text, (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 255, 0), 2)
+            cv2.putText(image, f"{direction}", (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 255, 0), 2)
+            cv2.putText(image, f'Head X: {int(avg_x)}, Y: {int(avg_y)}', (20, 420),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 0), 2)
 
-            if abs(avg_x) >= 17 or abs(avg_y) >= 15:
-                log_event("Excessive head movement detected!")
-                cv2.putText(image, "WARNING: Excessive movement detected!", (20, 100),
-                            cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
+            if abs(avg_x) >= 16 or abs(avg_y) >= 16:
+                log_event("⚠️ ALERT: Excessive head movement detected!")
+                cv2.putText(image, "WARNING: Excessive movement!", (20, 90),
+                            cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), 2)
 
     # ================== Phone Detection (YOLO) ==================
     results = model(image, stream=True)
@@ -198,10 +219,17 @@ while cap.isOpened():
             cv2.imwrite(f"alerts/phone_{timestamp}.jpg", image)
             last_alert_time = current_time
 
+    # Show on-screen warning for non-English speech (display for 3 seconds)
+    if non_english_warning and (time.time() - non_english_warning_time < 3):
+        cv2.putText(image, "⚠️ WARNING: Non-English speech detected!", (30, 140),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 0, 255), 3)
+    else:
+        non_english_warning = False
+
     # ================== Display ==================
     end = time.time()
     fps = 1 / (end - start)
-    cv2.putText(image, f'FPS: {int(fps)}', (20, 450), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 255, 0), 2)
+    cv2.putText(image, f'FPS: {int(fps)}', (20, 460), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
     cv2.imshow("Proctoring System", image)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
