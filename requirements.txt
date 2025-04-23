@@ -1,9 +1,0 @@
-fastapi==0.95.1
-uvicorn==0.22.0
-opencv-python==4.5.5.64
-mediapipe==0.8.11
-ultralytics==8.0.55
-numpy==1.23.1
-requests==2.28.1
-speechrecognition==3.8.1
-langdetect==1.0.9
