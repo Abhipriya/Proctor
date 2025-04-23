@@ -10,6 +10,31 @@ from collections import deque
 import speech_recognition as sr
 import langdetect
 from ultralytics import YOLO
+import sys
+import requests
+
+# Get user_id from command line argument
+user_id = sys.argv[1] if len(sys.argv) > 1 else "unknown"
+
+# Function to send a warning to the FastAPI backend
+def send_warning_to_backend(warning_message):
+    try:
+        response = requests.post("http://127.0.0.1:8000/add-warning", json={"user_id": user_id, "message": warning_message})
+        print(f"[API] Warning sent: {response.status_code}")
+    except Exception as e:
+        print(f"[API] Failed to send warning: {e}")
+
+import signal
+
+def handle_termination(signum, frame):
+    print("[INFO] Termination signal received. Cleaning up...")
+    if 'cap' in globals():
+        cap.release()
+        cv2.destroyAllWindows()
+    sys.exit(0)
+
+signal.signal(signal.SIGTERM, handle_termination)
+signal.signal(signal.SIGINT, handle_termination)
 
 # ====================== Initialization ======================
 # MediaPipe
@@ -53,8 +78,10 @@ last_alert_time = 0
 alert_cooldown = 5  # seconds
 
 # ====================== Functions ======================
-def log_event(message):
+def log_event(message, user_id=None):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    if user_id:
+        message = f"User: {user_id} - {message}"
     with open(log_file, "a", encoding="utf-8") as log:
         log.write(f"[{timestamp}] {message}\n")
     print(f"{timestamp} - {message}")
@@ -79,6 +106,7 @@ def detect_speech():
                     non_english_warning = True
                     non_english_warning_time = time.time()
                     print(f"Non-English Speech Detected: {detected_lang}")  # Debugging output
+                    send_warning_to_backend("Non-English speech detected")
             except sr.UnknownValueError:
                 pass
             except sr.RequestError:
@@ -133,6 +161,7 @@ while cap.isOpened():
     if face_count > 1:
         if not multi_person_detected:
             log_event("⚠️ ALERT: Multiple faces detected! Test access restricted.")
+            send_warning_to_backend("Multiple faces detected!")
             multi_person_detected = True
     else:
         multi_person_detected = False
@@ -140,6 +169,7 @@ while cap.isOpened():
     if not face_visible:
         if not face_not_detected:
             log_event("⚠️ ALERT: No face detected! Test access restricted.")
+            send_warning_to_backend("No face detected!")
             face_not_detected = True
         cv2.putText(image, "⚠️ WARNING: No face detected!", (30, 100),
                     cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), 3)
@@ -190,6 +220,7 @@ while cap.isOpened():
 
             if abs(avg_x) >= 16 or abs(avg_y) >= 16:
                 log_event("⚠️ ALERT: Excessive head movement detected!")
+                send_warning_to_backend("Excessive head movement detected!")
                 cv2.putText(image, "WARNING: Excessive movement!", (20, 90),
                             cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), 2)
 
@@ -215,6 +246,7 @@ while cap.isOpened():
                     cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), 3)
         if current_time - last_alert_time > alert_cooldown:
             log_event("⚠️ ALERT: Mobile phone detected!")
+            send_warning_to_backend("Mobile phone detected!")
             timestamp = time.strftime("%Y%m%d-%H%M%S")
             cv2.imwrite(f"alerts/phone_{timestamp}.jpg", image)
             last_alert_time = current_time
